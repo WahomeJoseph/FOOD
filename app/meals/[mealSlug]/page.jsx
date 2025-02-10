@@ -1,6 +1,8 @@
 import { getMeal } from "@/lib/Meals";
 import { notFound } from "next/navigation";
 
+import classes from './page.module.css'
+
 export function MealCard ({params}){
     const meals = getMeal(params.mealSlug)
     if (!meals) {
@@ -10,18 +12,17 @@ export function MealCard ({params}){
 
     return(
         <>
-        <header>
-            <div>
-                <Image src={meals.image} fill/>
+        <header className={classes.header}>
+            <div className={classes.image}>
+                <Image className={classes.img} src={meals.image} fill/>
             </div>
-            <div>
-                <h2>{meals.title}Meal Title</h2>
-                <p>By <a href={`mailto:${meals.creator_email}`}>{meals.creator}</a></p>
-                <p>{meals.summary}SUMMARY</p>
+            <div className={classes.headerText}>
+                <h1 className={classes.h1}>{meals.title}</h1>
+                <p className={classes.creator}>By <a className={classes.a} href={`mailto:${meals.creator_email}`}>{meals.creator}</a></p>
+                <p className={classes.summary}>{meals.summary}SUMMARY</p>
             </div>
         </header>
-        <main className="p-4">
-            <h2 className="text-2xl font-bold">Meal Card</h2>
+        <main className={classes.instructions}>
             <p dangerouslySetInnerHTML={{__html: meals.instructions}}>COOKING INSTRUCTIONS</p>
         </main>
         </>
