@@ -1,7 +1,7 @@
 import ImageSlider from "@/components/hero/ImageSlider";
 import Link from "next/link";
 export default function Home() {
-  console.log('Welcome...')
+  console.log('Welcome Back...')
   return (
     <>
       <header className="flex gap-12 sm:gap-4 sm-p-2 sm:text-base mx-12 mt-8 w-[100%] max-w-[80rem]">
@@ -19,8 +19,8 @@ export default function Home() {
             <p className="text-start leading-relaxed p-1 sm:text-justify">With your buddies give your taste buds the sumptuousness of African cuisine..</p>
           </div>
           <div className="flex gap-3 text-[1.5rem] sm:p-2 sm:mt-6 ">
-            <Link href='/meals' className="inline-block mt-3 p-2 sm:p-1 rounded-sm text-[#f1f1f1] font-bold hover:bg-gradient-to-r from-[#f9572a] to-[#ffc905] first:bg-transparent first:text-[#ff9b05] first:hover:text-black">🍲 Explore Meals 🍲</Link>
-            <Link href='/community' className="inline-block mt-2 p-3 sm:p-1 rounded-sm text-[#f1f1f1] font-bold hover:bg-gradient-to-r from-[#f9572a] to-[#ffc905] hover:text-black">👥 Join Community</Link>
+            <Link href='/meals' className="inline-block mt-3 p-3 sm:p-2 rounded-md text-[#f1f1f1] font-bold hover:bg-gradient-to-r from-[#f9572a] to-[#ffc905] first:bg-transparent first:text-[#ff9b05] first:hover:text-black">🍲 Explore Meals 🍲</Link>
+            <Link href='/community' className="inline-block mt-3 p-3 sm:p-2 rounded-md text-[#f1f1f1] font-bold hover:bg-gradient-to-r from-[#f9572a] to-[#ffc905] hover:text-black">👥 Join Community</Link>
           </div>
         </div>
       </header>
