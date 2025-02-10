@@ -1,7 +1,8 @@
 'use client'
 import { useRef, useState } from 'react'
+import Image from 'next/image'
+
 import classes from './image-picker.module.css'
-import { Span } from 'next/dist/trace'
 export default function ImagePicker({ label, name }) {
     const [pickImage, setPickImage] = useState()
     const imageRef = useRef()
@@ -38,7 +39,6 @@ export default function ImagePicker({ label, name }) {
                     onChange={handleChangeImage}
                     required
                 />
-
                 <button onClick={handleImage} className={classes.button} type='button'>Pick Meal Image</button>
             </div>
         </div>
