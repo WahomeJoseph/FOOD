@@ -12,9 +12,9 @@ const config = {
       },
       keyframes: {
         loading: {
-          "0%": { opacity: 0.3 },
+          "0%": { opacity: 0.4 },
           "50%": { opacity: 1 },
-          "100%": { opacity: 0.3 },
+          "100%": { opacity: 0.4 },
         },
       },
       colors: {
