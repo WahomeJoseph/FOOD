@@ -25,7 +25,7 @@ export default function MealsPage() {
                 <h3 className="m-1">Choose your fav recipe</h3>
                 {/* cta */}
                 <span>
-                    <Link heref='/meals/share' className="inline-block bg-gradient-to-r from-[#f9572a] to-[#ff9b05] mt-4 px-2 py-4 rounded-sm text-white font-bold">Share Your Favourite Recipe</Link>
+                    <Link href='/meals/share' className="inline-block bg-gradient-to-r from-[#f9572a] to-[#ff9b05] mt-4 px-2 py-4 rounded-sm text-white font-bold">Share Your Favourite Recipe</Link>
                 </span>
 
                 <main className="flex flex-col items-center justify-center min-h-screen">
