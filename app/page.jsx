@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <div className="flex gap-3 text-[1.5rem] sm:p-2 sm:mt-6 ">
             <Link href='/meals' className="inline-block mt-3 p-3 sm:p-2 rounded-md text-[#f1f1f1] font-bold hover:bg-gradient-to-r from-[#f9572a] to-[#ffc905] first:bg-transparent first:text-[#ff9b05] first:hover:text-black">🍲 Explore Meals 🍲</Link>
-            <Link href='/community' className="inline-block mt-3 p-3 sm:p-2 rounded-md text-[#f1f1f1] font-bold hover:bg-gradient-to-r from-[#f9572a] to-[#ffc905] hover:text-black">👥 Join Community</Link>
+            <Link href='/community' className="inline-block mt-3 p-3 sm:p-2 rounded-md text-[#f1f1f1] font-bold hover:bg-gradient-to-r from-[#f9572a] to-[#ffc905] hover:text-black">👥 Join Foodies</Link>
           </div>
         </div>
       </header>

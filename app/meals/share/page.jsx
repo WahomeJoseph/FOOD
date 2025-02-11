@@ -19,7 +19,7 @@ export default function ShareMealPage() {
         <>
             <header className={classes.header}>
                 <h1>
-                    Share your <span className={classes.highlight}>favorite meal</span>
+                    Share your <span className={classes.highlight}>Favorite Meal</span>
                 </h1>
                 <p>Or any other meal you feel needs sharing!</p>
             </header>
@@ -52,8 +52,7 @@ export default function ShareMealPage() {
                             required
                         ></textarea>
                     </p>
-                    IMAGE PICKER
-                    <ImagePicker label='Meal image' name='image'/>
+                    <ImagePicker label='Meal-image' name='image'/>
                     <p className={classes.actions}>
                         <button type="submit">Share Meal</button>
                     </p>
