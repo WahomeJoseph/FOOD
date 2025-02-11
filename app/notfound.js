@@ -1,3 +1,4 @@
+'use client'
 export default function NotFound(){
     return(
         <main className="mt-10">
@@ -5,7 +6,7 @@ export default function NotFound(){
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-            }}>No such meals were found</h1>
+            }}>An error occurred! Error 404!</h1>
             <p className="text-[#ddd6cb] tracking-wide bg-transparent uppercase font-bold text-center text-[1.2rem]">Failed to fetch your request meals data. Please try again!</p>
         </main>
     )
