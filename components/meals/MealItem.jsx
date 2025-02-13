@@ -5,7 +5,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
   return (
     <article className='flex flex-col text-[#ddd6cb] justify-between h-100vh rounded-md overflow-hidden transition-all ease-in-out duration-300' style={{boxShadow: '0 0 12px rgba(0, 0, 0, 0.3)', background: 'linear-gradient(90deg, #2c1e19, #25200f)'}}>
       <header>
-        <div className='relative h-[15rem]'>
+        <div className='relative m-4 rounded-sm h-[20rem]'>
           <Image src={image} alt={title} fill/>
         </div>
         <div className='p-3'>
