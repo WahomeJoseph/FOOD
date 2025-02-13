@@ -4,6 +4,14 @@ import classes from './page.module.css';
 import { submitMeal } from '@/lib/Submit';
 import SubmitMeals from '@/components/meals/SubmitMeals';
 import { useActionState } from 'react';
+
+export const generateMetadata = () => {
+    return {
+        title: 'Share Ur Cuisine To Foodies',
+        description: 'Delicious meals, shared by a food-loving community.',
+    };
+};
+
 export default function ShareMealPage() {
     const [state, formAction] = useActionState(submitMeal, {message: null})
 
