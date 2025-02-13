@@ -1,5 +1,11 @@
 import ImageSlider from "@/components/hero/ImageSlider";
 import Link from "next/link";
+
+export const metadata = {
+  title: 'Only Food and Foodies!',
+  description: 'Delicious meals, shared by a food-loving community.',
+};
+
 export default function Home() {
   console.log('Welcome Back...')
   return (
@@ -15,7 +21,7 @@ export default function Home() {
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-            }}>Greatest African Food Of All Time</h1>
+            }}>Greatest Global Cuisine Of All Time</h1>
             <p className="text-start leading-relaxed p-1 sm:text-justify">With your buddies give your taste buds the sumptuousness of African cuisine..</p>
           </div>
           <div className="flex gap-3 text-[1.5rem] sm:p-2 sm:mt-6 ">

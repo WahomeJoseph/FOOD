@@ -4,6 +4,18 @@ import Image from "next/image";
 
 import classes from './page.module.css'
 
+export async function generateMetadata({params}){
+    const {mealSlug} = await params
+    const meals = await getMeal(mealSlug)
+    if (!meals) {
+        notFound()
+    }
+    return{
+        title: meals.title,
+        description: meals.summary,
+    }
+}
+
 export default async function MealCard ({params}){
     const {mealSlug} = await params
     const meals = await getMeal(mealSlug)
