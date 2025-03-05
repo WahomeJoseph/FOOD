@@ -30,6 +30,7 @@ export default function Home() {
           </div>
         </div>
       </header>
+      
       {/* main part */}
       <main className="flex flex-col items-center space-y-8 p-4 mt-10 justify-center sm:p-8 w-full">
         <section className="flex flex-col text-[#ddd6cb] text-[1.5rem] max-w-[50rem] text-center">

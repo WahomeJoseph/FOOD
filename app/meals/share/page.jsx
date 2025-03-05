@@ -5,7 +5,7 @@ import { submitMeal } from '@/lib/Submit';
 import SubmitMeals from '@/components/meals/SubmitMeals';
 import { useActionState } from 'react';
 
-export const generateMetadata = () => {
+export const generatemetadata = () => {
     return {
         title: 'Share Ur Cuisine To Foodies',
         description: 'Delicious meals, shared by a food-loving community.',
