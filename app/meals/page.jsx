@@ -2,12 +2,13 @@ import { Suspense } from "react"
 import MealsGrid from "@/components/meals/MealsGrid"
 import { getMeals } from "@/lib/Meals.js"
 import Link from "next/link"
+
 export const metadata = {
     title: 'Cuisine For Foodies',
     description: 'Delicious meals, shared by a food-loving community.',
   };
 
-// data fetching using a component fnc
+// meals data fetching using a component fnc
 const Meals = async () => {
     const meals = await getMeals()
     return <MealsGrid meals={meals} />

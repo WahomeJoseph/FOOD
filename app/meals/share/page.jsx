@@ -1,9 +1,10 @@
 'use client'
+import { useActionState } from 'react';
+
 import ImagePicker from '@/components/meals/Meals-Picker';
 import classes from './page.module.css';
 import { submitMeal } from '@/lib/Submit';
 import SubmitMeals from '@/components/meals/SubmitMeals';
-import { useActionState } from 'react';
 
 export const generatemetadata = () => {
     return {
